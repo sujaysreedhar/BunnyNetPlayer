@@ -73,6 +73,6 @@ $expiretime = time() + 3600;
     // Construct the secure URL
     $secureUrl = 'https://iframe.mediadelivery.net/embed/' . $storage . '/' . $videoId . '?token=' . hash('sha256',$apiKey . $videoId . $expiretime) . '&expires=' .$expiretime;
 
-    return '<div style="position:relative;padding-top:56.25%;"><iframe src="' . $secureUrl . '&autoplay=true&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div> API:' . $apiKey . '<br> V+ID: ' . $secureUrl . '<br> URL: ' . $secureUrl;
+    return '<div style="position:relative;padding-top:56.25%;"><iframe src="' . $secureUrl . '&autoplay=true&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>';
 }
 
